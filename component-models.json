@@ -165,6 +165,18 @@
             "value": "links"
           }
         ]
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "classes_text-top",
+        "label": "Text at Top"
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "classes_text-center",
+        "label": "Center text"
       }
     ]
   },
