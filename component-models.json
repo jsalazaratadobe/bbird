@@ -86,49 +86,52 @@
     "id": "section",
     "fields": [
       {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
         "component": "multiselect",
         "name": "style",
         "label": "Style",
         "options": [
-          { 
-            "name": "Center",
-            "value": "center"
+          {
+            "name": "Background",
+            "children": [
+              { "name": "Highlight", "value": "highlight" },
+              { "name": "Gradient",  "value": "gradient" },
+              { "name": "Ink",       "value": "ink" }
+            ]
           },
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Text Alignment",
+            "children": [
+              { "name": "Center", "value": "center" }
+            ]
           },
           {
-            "name": "Tabs",
-            "value": "tabs"
+            "name": "Layout",
+            "children": [
+              { "name": "Divider", "value": "divider" },
+              { "name": "Tabs",    "value": "tabs" }
+            ]
           },
           {
-            "name": "Divider",
-            "value": "divider"
+            "name": "Spacer Top",
+            "children": [
+              { "name": "Small",  "value": "spacer-top-s" },
+              { "name": "Medium", "value": "spacer-top-m" },
+              { "name": "Large",  "value": "spacer-top-l" }
+            ]
           },
           {
-            "name": "Spacer Top (Small)",
-            "value": "spacer-top-s"
-          },
-          {
-            "name": "Spacer Top (Medium)",
-            "value": "spacer-top-m"
-          },
-          {
-            "name": "Spacer Top (Large)",
-            "value": "spacer-top-l"
-          },
-          {
-            "name": "Spacer Bottom (Small)",
-            "value": "spacer-bottom-s"
-          },
-          {
-            "name": "Spacer Bottom (Medium)",
-            "value": "spacer-bottom-m"
-          },
-          {
-            "name": "Spacer Bottom (Large)",
-            "value": "spacer-bottom-l"
+            "name": "Spacer Bottom",
+            "children": [
+              { "name": "Small",  "value": "spacer-bottom-s" },
+              { "name": "Medium", "value": "spacer-bottom-m" },
+              { "name": "Large",  "value": "spacer-bottom-l" }
+            ]
           }
         ]
       },
