@@ -85,70 +85,94 @@
   {
     "id": "section",
     "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          { 
-            "name": "Center",
-            "value": "center"
-          },
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          },
-          {
-            "name": "Tabs",
-            "value": "tabs"
-          },
-          {
-            "name": "Divider",
-            "value": "divider"
-          },
-          {
-            "name": "Spacer Top (Small)",
-            "value": "spacer-top-s"
-          },
-          {
-            "name": "Spacer Top (Medium)",
-            "value": "spacer-top-m"
-          },
-          {
-            "name": "Spacer Top (Large)",
-            "value": "spacer-top-l"
-          },
-          {
-            "name": "Spacer Bottom (Small)",
-            "value": "spacer-bottom-s"
-          },
-          {
-            "name": "Spacer Bottom (Medium)",
-            "value": "spacer-bottom-m"
-          },
-          {
-            "name": "Spacer Bottom (Large)",
-            "value": "spacer-bottom-l"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "tabId",
-        "label": "Tab ID",
-        "description": "Set a tab ID to include this section in a tabs group"
-      },
-      {
-        "component": "text",
-        "name": "tabTitle",
-        "label": "Tab Title",
-        "description": "Display title for the tab (defaults to Tab ID if empty)"
-      },
-      {
-        "component": "reference",
-        "name": "background",
-        "label": "Background Image",
-        "description": "Background image for the section (used by tabs)"
+         {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "classes_center",
+          "label": "Center Content"
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "label": "Style",
+          "options": [
+            { "name": "Default",   "value": "" },
+            { "name": "Highlight", "value": "highlight" },
+            { "name": "Gradient",  "value": "gradient" },
+            { "name": "Ink",       "value": "ink" }
+          ]
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "classes_divider",
+          "label": "Divider"
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "classes_tabs",
+          "label": "Tabs"
+        },
+        {
+          "component": "select",
+          "name": "classes_spacer-top",
+          "label": "Spacer Top",
+          "options": [
+            { "name": "None",   "value": "" },
+            { "name": "Small",  "value": "spacer-top-s" },
+            { "name": "Medium", "value": "spacer-top-m" },
+            { "name": "Large",  "value": "spacer-top-l" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_spacer-bottom",
+          "label": "Spacer Bottom",
+          "options": [
+            { "name": "None",   "value": "" },
+            { "name": "Small",  "value": "spacer-bottom-s" },
+            { "name": "Medium", "value": "spacer-bottom-m" },
+            { "name": "Large",  "value": "spacer-bottom-l" }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "tabId",
+          "label": "Tab ID",
+          "description": "Set a tab ID to include this section in a tabs group"
+        },
+        {
+          "component": "text",
+          "name": "tabTitle",
+          "label": "Tab Title",
+          "description": "Display title for the tab (defaults to Tab ID if empty)"
+        },
+        {
+          "component": "reference",
+          "name": "background",
+          "label": "Background Image",
+          "description": "Background image for the section (used by tabs)"
+        }
+      ]
+    },
+    {
+      "component": "text",
+      "name": "tabId",
+      "label": "Tab ID",
+      "description": "Set a tab ID to include this section in a tabs group"
+    },
+    {
+      "component": "text",
+      "name": "tabTitle",
+      "label": "Tab Title",
+      "description": "Display title for the tab (defaults to Tab ID if empty)"
+    },
+    {
+      "component": "reference",
+      "name": "background",
+      "label": "Background Image",
+      "description": "Background image for the section (used by tabs)"
       }
     ]
   },
