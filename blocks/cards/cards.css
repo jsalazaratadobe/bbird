@@ -247,3 +247,13 @@
     max-height: 300px;
   }
 }
+
+/* Text-top variant: flip image below the body on all cards */
+.cards.text-top > ul > li {
+  flex-direction: column-reverse;
+}
+
+/* Text-center variant: center-align body content on all cards */
+.cards.text-center .cards-card-body {
+  text-align: center;
+}
