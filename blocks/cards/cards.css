@@ -249,7 +249,8 @@
 }
 
 /* Text-top variant: flip image below the body on all cards */
-.cards.text-top > ul > li {
+.cards.text-top > ul > li,
+.cards.text-top .cards-card-link {
   flex-direction: column-reverse;
 }
 
