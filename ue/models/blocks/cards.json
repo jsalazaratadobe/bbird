@@ -25,7 +25,9 @@
           "fields": [
             { "name": "image", "selector": "div:nth-child(1)>picture>img[src]" },
             { "name": "imageAlt", "selector": "div:nth-child(1)>picture>img[alt]" },
-            { "name": "text", "selector": "div:nth-child(2)" }
+            { "name": "text", "selector": "div:nth-child(2)" },
+            { "name": "classes_text-top",    "selector": "" },
+            { "name": "classes_text-center", "selector": "" }
           ]
         }
       }
@@ -43,6 +45,18 @@
             { "name": "Default", "value": "" },
             { "name": "Links", "value": "links" }
           ]
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "classes_text-top",
+          "label": "Text at top"
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "classes_text-center",
+          "label": "Center text"
         }
       ]
     },
