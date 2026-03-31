@@ -90,6 +90,10 @@
         "name": "style",
         "label": "Style",
         "options": [
+          { 
+            "name": "Center",
+            "value": "center"
+          },
           {
             "name": "Highlight",
             "value": "highlight"
